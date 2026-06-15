@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Minecraft",
+    "image": "images/game-thumbs/minecraft.jpg",
+    "file": "games/minecraft.html",
+    "category": "Sandbox"
+  },
+  {
+    "name": "Slope",
+    "image": "images/game-thumbs/slope.jpg",
+    "file": "games/slope.html",
+    "category": "Arcade"
+  },
+  {
+    "name": "1v1.LOL",
+    "image": "images/game-thumbs/1v1lol.jpg",
+    "file": "games/1v1lol.html",
+    "category": "FPS"
+  }
+]
