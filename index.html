@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gohan RedGames</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <input
+        type="text"
+        id="search"
+        placeholder="Search Games..."
+    >
+
+    <img src="images/logo.png" class="logo">
+</header>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <h2>Categories</h2>
+
+        <button class="category" data-category="All">All Games</button>
+        <button class="category" data-category="FPS">FPS</button>
+        <button class="category" data-category="Puzzle">Puzzle</button>
+        <button class="category" data-category="Arcade">Arcade</button>
+        <button class="category" data-category="Sandbox">Sandbox</button>
+        <button class="category" data-category="Racing">Racing</button>
+
+    </aside>
+
+    <main>
+
+        <div id="games-grid"></div>
+
+    </main>
+
+</div>
+
+<div id="game-overlay">
+
+    <div id="game-window">
+
+        <button id="close-btn">✕</button>
+
+        <iframe
+            id="game-frame"
+            src=""
+            allowfullscreen
+        ></iframe>
+
+    </div>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
