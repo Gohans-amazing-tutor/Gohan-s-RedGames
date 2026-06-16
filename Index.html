@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gohan RedGames</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search games..." onkeyup="filterGames()">
+        </div>
+        <div class="logo">
+            <img src="1000011731.png" alt="Gohan RedGames Logo">
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li onclick="filterCategory('all')">All Games</li>
+                <li onclick="filterCategory('FPS')">FPS</li>
+                <li onclick="filterCategory('Puzzle')">Puzzle</li>
+                <li onclick="filterCategory('Action')">Action</li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div class="game-grid" id="gameGrid">
+                </div>
+        </main>
+    </div>
+
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeGame()">&times; Close Game</span>
+            <iframe id="gameFrame" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="games.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
