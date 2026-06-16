@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Navbar Style */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111111;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ff0000;
+}
+
+.search-container input {
+    background-color: #222222;
+    border: 1px solid #ff0000;
+    color: white;
+    padding: 8px;
+    width: 250px;
+    border-radius: 4px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* Main Layout Split */
+.main-container {
+    display: flex;
+    padding: 20px;
+}
+
+/* Sidebar Style */
+.sidebar {
+    width: 200px;
+    background-color: #111111;
+    padding: 15px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+}
+
+.sidebar h3 {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 8px 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.sidebar ul li:hover {
+    color: #ff0000;
+    background-color: #222222;
+}
+
+/* Game Grid (3 Columns) */
+.content {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Game Cards */
+.game-card {
+    background-color: #111111;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.game-card:hover {
+    transform: scale(1.03);
+    border-color: #ff0000;
+}
+
+.game-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.game-card h4 {
+    padding: 10px;
+    color: #ffffff;
+}
+
+/* Sliding Game Window */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modal-content {
+    position: fixed;
+    bottom: -100%;
+    left: 5%;
+    width: 90%;
+    height: 85%;
+    background-color: #111111;
+    border: 2px solid #ff0000;
+    border-radius: 10px 10px 0 0;
+    transition: bottom 0.4s ease-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal.show .modal-content {
+    bottom: 0;
+}
+
+.close-btn {
+    color: #ff0000;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: right;
+    background-color: #000;
+}
+
+iframe {
+    width: 100%;
+    flex: 1;
+    background-color: #000;
+}
+
